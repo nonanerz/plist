@@ -76,7 +76,7 @@ class PDictionary implements PRoot, \ArrayAccess, \Countable, \Iterator
 
     public function valid(): bool
     {
-        return isset($this->elements[key($this->elements)]);
+        return null !== key($this->elements);
     }
 
     public function rewind(): void
